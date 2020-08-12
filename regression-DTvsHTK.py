@@ -70,9 +70,13 @@ for sector in sector_list:
 
     single_model = LinearRegression() 
     single_model.fit(feature_train, outcome_train) 
-    single_model.score(feature_test, outcome_test) 
     y_fit = single_model.predict(feature_train) 
     test_predictions = single_model.predict(feature_test) 
+    train_score = single_model.score(feature_train, outcome_train) 
+    test_score = single_model.score(feature_test, outcome_test) 
+
+    print(sector)
+    print(train_score, test_score)
 
     #tạo label patch cho graph 
     r_patch = mpatches.Patch(color='red', label = 'Dữ Liệu HTK Lag 2 Quý và Doanh Thu Thật')
