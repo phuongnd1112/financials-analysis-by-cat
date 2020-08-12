@@ -1,6 +1,7 @@
 # Phân tích financials của các công ty theo ngành ở Việt Nam 
 
 Repo này có tổ hợp các file python dùng để phân tích, và các chart đã được vẽ để phân tích những chỉ số đó. 
+Data: financials.csv
 
 #1. Doanh Thu vs Hàng Tồn Kho 
 Phân tích Doanh Thu vs Hàng Tồn Kho của một doanh nghiệp có thể cho thấy hiệu quả hoạt động của doanh nghiệp đó. 
